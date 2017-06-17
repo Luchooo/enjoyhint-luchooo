@@ -8,7 +8,7 @@
 
 * Method stop
 
-`stop` - **New** Close the current tutorial. Has no arguments. **It's not mine**
+`close` - **New** Close the current tutorial. Has no arguments.
 
 
 EnjoyHint
@@ -133,12 +133,12 @@ $.get('/load/some_data', function(data){
 
 
 #### Methods
-* `set` - set current steps configuration. Arguments: config
-* `run` - run the current script. Has no arguments
-* `resume` - resume the script from the step where it was stopped. Has no arguments
+* `set` - set current steps configuration. Arguments: config  
+* `run` - run the current script. Has no arguments  
+* `resume` - resume the script from the step where it was stopped. Has no arguments  
 * `getCurrentStep` - returns the current step index
 * `trigger` -  After writing this code you can either move to the next step or finish with EnjoyHint (next|skip)
-* `stop` - **New** Close the current tutorial. Has no arguments. **It's not mine**
+* `close` - **New** Close the current tutorial. Has no arguments.
 
 #### Events
 **Script Events**:
@@ -152,7 +152,7 @@ var enjoyhint_instance = new EnjoyHint({
   }
 });
 ```
-**Step Events**:
+**Step Events**:  
 * `onBeforeStart` - fires before the step is started.
 ```javascript
 var enjoyhint_script_steps = [
@@ -169,5 +169,5 @@ var enjoyhint_script_steps = [
 
 #### Release notes
 
-* New function stop()
+* New method close()
 * Refactor function onEnd()

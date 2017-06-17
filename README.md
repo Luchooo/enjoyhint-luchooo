@@ -6,7 +6,7 @@
 
 `onEnd` - fires after the last step in script, fires after user has clicked skip and fires after click close button.
 
-* Method stop
+* Method close
 
 `close` - **New** Close the current tutorial. Has no arguments.
 
